@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Space Number - サポート</title>
+    <style>
+        * { 
+            box-sizing: border-box; 
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            color: #1d1d1f;
+            font-size: 17px; /* iOS標準サイズ */
+        }
+        
+        .container {
+            padding: 20px 16px;
+            padding-bottom: 40px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 32px;
+            color: white;
+            padding-top: 20px;
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border: 0.5px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0 0 16px 0;
+            color: #1d1d1f;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-button {
+            background: #007AFF;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 20px 0;
+            min-height: 44px; /* iOS推奨タップサイズ */
+            transition: all 0.2s ease;
+        }
+        
+        .contact-button:active {
+            background: #0056b3;
+            transform: scale(0.98);
+        }
+        
+        .faq-item {
+            margin-bottom: 24px;
+            padding: 16px;
+            background: rgba(248, 249, 250, 0.8);
+            border-radius: 12px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        
+        .faq-answer {
+            color: #424245;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .app-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #424245;
+        }
+        
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            margin-top: 32px;
+        }
+        
+        .privacy-link {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 16px;
+            min-height: 44px;
+            line-height: 20px;
+            transition: all 0.2s ease;
+        }
+        
+        .privacy-link:active {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(0.98);
+        }
+        
+        /* iPhone SE対応 */
+        @media (max-width: 375px) {
+            .hero h1 { font-size: 1.8rem; }
+            .card { padding: 20px; }
+        }
+        
+        /* iPhone Pro Max対応 */
+        @media (min-width: 414px) {
+            .container { max-width: 400px; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🚀 Space Number</h1>
+            <p>宇宙で楽しむ新感覚パズル</p>
+        </div>
+        
+        <div class="card">
+            <h2>📧 お問い合わせ</h2>
+            <p>ゲームに関するご質問やサポートが必要でしたら、お気軽にご連絡ください。</p>
+            <a href="mailto:spacenumber.official@gmail.com" class="contact-button">
+                メールで問い合わせ
+            </a>
+        </div>
+        
+        <div class="card">
+            <h2>🎮 よくある質問</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: ゲームデータが消えました</div>
+                <div class="faq-answer">データはデバイス内に保存されています。iOSの設定からSpace Numberのストレージをご確認ください。データ管理はユーザー様の責任となります。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: 音が出ません</div>
+                <div class="faq-answer">ゲーム内設定で音響設定をご確認ください。デバイスの音量やマナーモードもチェックしてください。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: 1024の先が見たい</div>
+                <div class="faq-answer">地球（1024）を作ると、宇宙の真の姿が明かされます。戦略的にプレイして、その先の世界を体験してください。</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🌟 ゲームについて</h2>
+            <p class="app-description">
+                美しい宇宙を舞台に数字を合体させる新感覚パズル。2から始まり、地球、そしてその先の神秘的な世界まで。宇宙の壮大な物語を数字で紡ぐ体験をお楽しみください。
+            </p>
+        </div>
+        
+        <div class="footer">
+            <a href="privacy.html" class="privacy-link">プライバシーポリシー</a>
+            <p>© 2025 Seiru Yasuhara</p>
+        </div>
+    </div>
+</body>
+</html>
+
