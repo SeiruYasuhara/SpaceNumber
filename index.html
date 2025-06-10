@@ -11,87 +11,93 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
-            background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%);
-            min-height: 100vh;
-            color: #1d1d1f;
-            font-size: 17px; /* iOS標準サイズ */
+            background: #ffffff;
+            color: #333333;
+            font-size: 16px;
         }
         
         .container {
-            padding: 20px 16px;
-            padding-bottom: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         
-        .hero {
+        .header {
             text-align: center;
-            margin-bottom: 32px;
-            color: white;
-            padding-top: 20px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e5e5e5;
         }
         
-        .hero h1 {
+        .header h1 {
             font-size: 2.2rem;
             font-weight: 700;
             margin: 0 0 8px 0;
+            color: #1a1a1a;
             letter-spacing: -0.02em;
         }
         
-        .hero p {
+        .header p {
             font-size: 1.1rem;
             font-weight: 400;
-            opacity: 0.9;
+            color: #6c757d;
             margin: 0;
         }
         
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            border: 0.5px solid rgba(255, 255, 255, 0.2);
+        .section {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         
         h2 {
             font-size: 1.4rem;
             font-weight: 600;
             margin: 0 0 16px 0;
-            color: #1d1d1f;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            color: #1a1a1a;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d1d1d1;
         }
         
         .contact-button {
-            background: #007AFF;
+            background: #007bff;
             color: white;
-            padding: 16px 24px;
-            border-radius: 12px;
+            padding: 16px 32px;
+            border-radius: 4px;
             text-decoration: none;
-            display: block;
+            display: inline-block;
             text-align: center;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin: 20px 0;
-            min-height: 44px; /* iOS推奨タップサイズ */
-            transition: all 0.2s ease;
+            min-height: 52px;
+            line-height: 20px;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .contact-button:hover {
+            background: #0056b3;
         }
         
         .contact-button:active {
-            background: #0056b3;
-            transform: scale(0.98);
+            background: #004085;
         }
         
         .faq-item {
             margin-bottom: 24px;
-            padding: 16px;
-            background: rgba(248, 249, 250, 0.8);
-            border-radius: 12px;
+            padding: 20px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
         }
         
         .faq-item:last-child {
@@ -100,107 +106,158 @@
         
         .faq-question {
             font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 8px;
+            color: #1a1a1a;
+            margin-bottom: 12px;
             font-size: 1rem;
-            line-height: 1.4;
+            line-height: 1.5;
         }
         
         .faq-answer {
-            color: #424245;
-            line-height: 1.6;
-            font-size: 0.95rem;
+            color: #4a4a4a;
+            line-height: 1.7;
+            font-size: 15px;
+            margin: 0;
         }
         
         .app-description {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #424245;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4a4a4a;
+            margin: 0;
         }
         
         .footer {
             text-align: center;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.85rem;
-            margin-top: 32px;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
+            color: #6c757d;
+            font-size: 14px;
         }
         
         .privacy-link {
-            color: white;
+            color: #007bff;
             text-decoration: none;
-            padding: 12px 20px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 10px;
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
             display: inline-block;
             margin-bottom: 16px;
+            font-weight: 500;
             min-height: 44px;
             line-height: 20px;
             transition: all 0.2s ease;
         }
         
+        .privacy-link:hover {
+            background: #e9ecef;
+            text-decoration: none;
+        }
+        
         .privacy-link:active {
-            background: rgba(255, 255, 255, 0.25);
-            transform: scale(0.98);
+            background: #dee2e6;
         }
         
-        /* iPhone SE対応 */
+        .contact-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .email-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container { 
+                padding: 20px 16px; 
+            }
+            .section { 
+                padding: 24px 20px; 
+            }
+            .header h1 { 
+                font-size: 1.8rem; 
+            }
+            h2 { 
+                font-size: 1.2rem; 
+            }
+        }
+        
         @media (max-width: 375px) {
-            .hero h1 { font-size: 1.8rem; }
-            .card { padding: 20px; }
-        }
-        
-        /* iPhone Pro Max対応 */
-        @media (min-width: 414px) {
-            .container { max-width: 400px; margin: 0 auto; }
+            .section { 
+                padding: 20px 16px; 
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="hero">
-            <h1>🚀 Space Number</h1>
-            <p>宇宙で楽しむ新感覚パズル</p>
+        <div class="header">
+            <h1>Space Number</h1>
+            <p>サポートページ</p>
         </div>
         
-        <div class="card">
-            <h2>📧 お問い合わせ</h2>
-            <p>ゲームに関するご質問やサポートが必要でしたら、お気軽にご連絡ください。</p>
+        <div class="section">
+            <h2>お問い合わせ</h2>
+            <p>ゲームに関するご質問、技術的なサポートが必要な場合は、以下の連絡先までお気軽にお問い合わせください。</p>
+            
+            <div class="contact-info">
+                <p><strong>電子メール：</strong><a href="mailto:spacenumber.official@gmail.com" class="email-link">spacenumber.official@gmail.com</a></p>
+                <p><strong>対応時間：</strong>平日 9:00-18:00（日本時間）</p>
+                <p><strong>回答目安：</strong>1-3営業日以内</p>
+            </div>
+            
             <a href="mailto:spacenumber.official@gmail.com" class="contact-button">
-                メールで問い合わせ
+                メールでお問い合わせ
             </a>
         </div>
         
-        <div class="card">
-            <h2>🎮 よくある質問</h2>
+        <div class="section">
+            <h2>よくある質問</h2>
             
             <div class="faq-item">
-                <div class="faq-question">Q: ゲームデータが消えました</div>
-                <div class="faq-answer">データはデバイス内に保存されています。iOSの設定からSpace Numberのストレージをご確認ください。データ管理はユーザー様の責任となります。</div>
+                <div class="faq-question">Q. ゲームデータが消失しました</div>
+                <div class="faq-answer">本アプリのデータはお客様のデバイス内にローカル保存されております。iOSの設定からSpace Numberのストレージ設定をご確認ください。データの管理・バックアップはお客様の責任範囲となります。</div>
             </div>
             
             <div class="faq-item">
-                <div class="faq-question">Q: 音が出ません</div>
-                <div class="faq-answer">ゲーム内設定で音響設定をご確認ください。デバイスの音量やマナーモードもチェックしてください。</div>
+                <div class="faq-question">Q. 音声が再生されません</div>
+                <div class="faq-answer">ゲーム内設定画面から音響設定をご確認ください。また、デバイスの音量設定やマナーモードの状態もあわせてご確認ください。</div>
             </div>
             
             <div class="faq-item">
-                <div class="faq-question">Q: 1024の先が見たい</div>
-                <div class="faq-answer">地球（1024）を作ると、宇宙の真の姿が明かされます。戦略的にプレイして、その先の世界を体験してください。</div>
+                <div class="faq-question">Q. 1024（地球）より先の展開について</div>
+                <div class="faq-answer">1024（地球）を生成すると、より壮大な宇宙の物語が展開されます。戦略的なプレイを通じて、宇宙の真の姿をお楽しみください。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q. アプリが正常に動作しません</div>
+                <div class="faq-answer">アプリを完全に終了し、デバイスを再起動してください。問題が継続する場合は、お客様のデバイス情報（機種名、OSバージョン）とあわせてお問い合わせください。</div>
             </div>
         </div>
         
-        <div class="card">
-            <h2>🌟 ゲームについて</h2>
+        <div class="section">
+            <h2>アプリケーションについて</h2>
             <p class="app-description">
-                美しい宇宙を舞台に数字を合体させる新感覚パズル。2から始まり、地球、そしてその先の神秘的な世界まで。宇宙の壮大な物語を数字で紡ぐ体験をお楽しみください。
+                Space Numberは、宇宙を舞台とした数字合成パズルゲームです。2から始まり、段階的に数字を合成して1024（地球）、そしてその先の神秘的な宇宙世界まで到達することを目指します。美しい宇宙のビジュアルと共に、戦略性の高いパズル体験をお楽しみいただけます。
             </p>
         </div>
         
         <div class="footer">
             <a href="privacy.html" class="privacy-link">プライバシーポリシー</a>
-            <p>© 2025 Seiru Yasuhara</p>
+            <p>開発者：Seiru Yasuhara<br>
+            最終更新日：2025年6月10日</p>
+            <p>© 2025 Seiru Yasuhara. All Rights Reserved.</p>
         </div>
     </div>
 </body>
 </html>
-
